@@ -18,7 +18,7 @@ a {
 
 h1 {
   font-size: 60px;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: -0.3px;
   margin: 0;
   padding: 0;
@@ -252,13 +252,30 @@ h1 {
   margin-right: 9px;
 }
 
+.sales {
+  background: #50c3ff;
+}
+
+.sales__wrapper > h1 {
+  color: #fff;
+}
+
 .sales__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 50px;
 }
 
 .sales__block {
+  position: relative;
   height: 554px;
   width: 370px;
+  background: #ffffff;
+  border-radius: 4px 0 0;
 }
 
 .sales__header {
@@ -270,6 +287,14 @@ h1 {
   padding-left: 22px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.sales__header_yellow {
+  background-color: #ffc528;
+}
+
+.sales__header_red {
+  background-color: #ff1a3a;
 }
 
 .sales__plan {
@@ -306,7 +331,11 @@ h1 {
 .sales__people {
   margin-top: 42px;
   text-align: center;
-  padding-right: 175px;
+  padding-right: 150px;
+}
+
+.sales__group {
+  text-align: center;
 }
 
 .sales__group:not(:first-child) {
@@ -317,6 +346,10 @@ h1 {
   color: #50c3ff;
   font-size: 30px;
   font-weight: 700;
+}
+
+.sales__price_free {
+  font-size: 16px;
 }
 
 .sales__ticket {
@@ -332,10 +365,104 @@ h1 {
   padding: 15px 23px 13px 36px;
   border-radius: 25px;
   margin-top: 29px;
+  cursor: pointer;
 }
 
 .sales__button::before {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 45px;
+  padding: 12px 7px 13px 8px;
+  background: url("../icons/green.svg") center no-repeat;
+  -webkit-box-shadow: 0 10px 15px rgba(48, 48, 49, 0.2);
+          box-shadow: 0 10px 15px rgba(48, 48, 49, 0.2);
+  border-radius: 50%;
+  bottom: 30px;
+  left: 57px;
+  background-color: #fff;
+}
+
+.sales__button_yellow {
+  color: #ffc528;
+  border: 2px solid #ffc528;
+}
+
+.sales__button_yellow::before {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 45px;
+  padding: 12px 7px 13px 8px;
+  background: url("../icons/yellow.svg") center no-repeat;
+  -webkit-box-shadow: 0 10px 15px rgba(48, 48, 49, 0.2);
+          box-shadow: 0 10px 15px rgba(48, 48, 49, 0.2);
+  border-radius: 50%;
+  bottom: 30px;
+  left: 57px;
+  background-color: #fff;
+}
+
+.sales__button_red {
+  color: #ff1a3a;
+  border: 2px solid #ff1a3a;
+}
+
+.sales__button_red::before {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 45px;
+  padding: 12px 7px 13px 8px;
+  background: url("../icons/red.svg") center no-repeat;
+  -webkit-box-shadow: 0 10px 15px rgba(48, 48, 49, 0.2);
+          box-shadow: 0 10px 15px rgba(48, 48, 49, 0.2);
+  border-radius: 50%;
+  bottom: 30px;
+  left: 57px;
+  background-color: #fff;
+}
+
+.sales__saturday {
+  position: absolute;
+  width: 115px;
+  background-color: #f8f8f8;
+  margin-top: -520px;
+  left: 256px;
+  height: 341px;
+  padding-top: 87px;
+}
+
+.sales__period {
   content: '';
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  padding: 13px 8px;
+  -webkit-box-shadow: 0 10px 15px rgba(48, 48, 49, 0.2);
+          box-shadow: 0 10px 15px rgba(48, 48, 49, 0.2);
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #64cf47;
+  background: #fff;
+  top: 18px;
+  right: 90px;
+}
+
+.sales__period_yellow {
+  color: #ffc528;
+}
+
+.sales__period_red {
+  color: #ff1a3a;
+}
+
+.sales__saturday > .sales__people {
+  padding-right: 0;
 }
 
 hr {

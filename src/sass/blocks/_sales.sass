@@ -1,19 +1,30 @@
 .sales
+    background: #50c3ff
+    &__wrapper > h1
+        color: #fff
     &__blocks
+        display: flex
+        justify-content: space-between
         margin-top: 50px
     &__block
+        position: relative
         height: 554px
         width: 370px
+        background: #ffffff
+        border-radius: 4px 0 0
     &__header
         height: 86px
         border-radius: 4px 0 0
         background-color: #64cf47
         font-size: 22px
         font-weight: 700
-        // line-height: 36px
         padding-left: 22px
         color: #ffffff
         text-transform: uppercase
+        &_yellow
+            background-color: #ffc528
+        &_red
+            background-color: #ff1a3a
     &__plan
         display: flex
         justify-content: space-around
@@ -35,15 +46,17 @@
     &__people
         margin-top: 42px
         text-align: center
-        padding-right: 175px
+        padding-right: 150px
     &__group
-
+        text-align: center
     &__group:not(:first-child)
         margin-top: 43px
     &__price
         color: #50c3ff
         font-size: 30px
         font-weight: 700
+        &_free
+            font-size: 16px
     &__ticket
         text-align: center
     &__button
@@ -55,8 +68,82 @@
         padding: 15px 23px 13px 36px
         border-radius: 25px
         margin-top: 29px
+        cursor: pointer
         &::before
-            content: ''
+            content: ""
+            position: absolute
+            height: 35px
+            width: 45px
+            padding: 12px 7px 13px 8px
+            background: url('../icons/green.svg') center no-repeat
+            box-shadow: 0 10px 15px rgba(48, 48, 49, 0.2)
+            border-radius: 50%
+            bottom: 30px
+            left: 57px
+            background-color: #fff
+        &_yellow
+            color: #ffc528
+            border: 2px solid #ffc528
+            &::before
+                content: ""
+                position: absolute
+                height: 35px
+                width: 45px
+                padding: 12px 7px 13px 8px
+                background: url('../icons/yellow.svg') center no-repeat
+                box-shadow: 0 10px 15px rgba(48, 48, 49, 0.2)
+                border-radius: 50%
+                bottom: 30px
+                left: 57px
+                background-color: #fff
+        &_red
+            color: #ff1a3a
+            border: 2px solid #ff1a3a
+            &::before
+                content: ""
+                position: absolute
+                height: 35px
+                width: 45px
+                padding: 12px 7px 13px 8px
+                background: url('../icons/red.svg') center no-repeat
+                box-shadow: 0 10px 15px rgba(48, 48, 49, 0.2)
+                border-radius: 50%
+                bottom: 30px
+                left: 57px
+                background-color: #fff
+    &__saturday
+        position: absolute
+        width: 115px
+        background-color: #f8f8f8
+        // text-align: center
+        margin-top: -520px
+        left: 256px
+        height: 341px
+        padding-top: 87px
+    &__period
+        content: ''
+        height: 50px
+        width: 50px
+        position: absolute
+        font-size: 13px
+        font-weight: 700
+        text-align: center
+        padding: 13px 8px
+        box-shadow: 0 10px 15px rgba(48, 48, 49, 0.2)
+        border-radius: 50%
+        box-sizing: border-box
+        color: #64cf47
+        background: #fff
+        top: 18px
+        right: 90px
+
+        &_yellow
+            color: #ffc528
+        &_red
+            color: #ff1a3a
+
+.sales__saturday > .sales__people
+    padding-right: 0
 hr
     height: 4px
     width: 100%
