@@ -36,6 +36,7 @@
         border-radius: 20px
         background-color: $y-color
         font-size: 16px
+        font-weight: 700
         color: #ffffff
         border: none
     &__blocks
@@ -70,6 +71,26 @@
         background: #fff
         cursor: pointer
     &__vk
+        position: relative
         color: #fff
         font-size: 16px
         font-weight: 700
+        height: 40px
+        width: 270px
+        padding-left: 44px
+        border-radius: 20px
+        background: $y-color
+        border: none
+        cursor: pointer
+        margin-left: 51px
+        &::before
+            content: ''
+            position: absolute
+            background: url(../icons/vk.svg) center no-repeat
+            height: 50px
+            width: 50px
+            box-shadow: 0 10px 15px rgba(48, 48, 49, 0.2)
+            background-color: #ffffff
+            border-radius: 50%
+            left: -10px
+            top: -5px

@@ -1,50 +1,57 @@
 .header
     background: url(../img/woman.png) center center/cover no-repeat
-    // background-clip: padding-box
-    // background-origin: border-box
-    background-position: bottom 99px left 60px
+    background-position: left -50px bottom 20px
     height: 828px
-    background-size: 115%
+    background-size: 110%
     &__menu
         display: flex
         justify-content: space-between
         align-items: center
-        padding-top: 30px
+        padding-top: 60px
+        box-sizing: border-box
+        height: 43px
     &__title
         color: #ffd713
         font-size: 26px
-    &__ul
-        display: flex
-    &__li
-        font-size: 14px
-        list-style-type: none
-        letter-spacing: 0.8px
-        padding-right: 18px
-        padding-left: 18px
-        font-weight: 400px
-        &:hover
-            width: 90px
-            height: 40px
-            border-radius: 20px
-            background-color: #ff1a3a
-            text-align: center
+        font-weight: 700
+        text-transform: uppercase
     &__phone
         font-size: 18px
         color: #fff
-        font-weight: 400
-    &__icon
-        box-shadow: 0 10px 15px rgba(48, 48, 49, 0.31)
-        background-color: #e450ff
-        border-radius: 50%
-        margin-right: 9px
-        padding: 10px
+        font-weight: 700
     &__icons
         display: flex
         align-items: center
+    &__icon
+        height: 35px
+        width: 35px
+        padding: 11px 10px 0px 6px
+        background: #e450ff
+        border-radius: 50%
+        margin-right: 9px
+        box-shadow: 0 10px 15px rgba(48, 48, 49, 0.31)
+        text-align: center
+    &__ul
+        display: flex
+        margin: 0
+    &__li
+        list-style-type: none
+        font-size: 16px
+        font-weight: 700
+        padding-left: 12px
+        padding-right: 12px
+        &:hover
+            padding-left: none
+        & > a:hover
+            padding: 13px
+            background: #ff1a3a
+            border-radius: 20px
     &__stocks
         margin-top: 135px
+    &__img
+        height: 140px
     &__subtitle
-        margin: 30px 0 45px 0
+        margin: 70px 0 45px 0
         color: #fff
         font-size: 30px
         font-weight: 700
@@ -52,12 +59,20 @@
         height: 50px
         width: 230px
         background: $main-color
-        padding: 19px
+        padding: 16px 19px 16px 61px
         border-radius: 24px
         position: relative
-    &__ticket
-        border-radius: 30px
-        background: #fff
+        &::before
+            content: ''
+            position: absolute
+            background: url(../icons/red.svg) center no-repeat
+            width: 50px
+            height: 50px
+            background-color: #fff
+            border-radius: 50%
+            box-shadow: 0 10px 15px rgba(48, 48, 49, 0.2)
+            bottom: 0px
+            left: -1px
     &__bonus
         color: $main-color
         font-size: 16px
@@ -65,6 +80,7 @@
         letter-spacing: -0.07px
         background: #fff
         border-radius: 24px
-        padding: 19px 19px 19px 52px
+        padding: 16px 19px 16px 52px
+        margin-left: -47px
 .colortext
     color: #fff

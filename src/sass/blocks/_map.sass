@@ -1,0 +1,41 @@
+.map
+    padding-top: 92px
+    &__wrapper
+        display: flex
+        height: 599px
+    &__card
+        color: #fff
+        background: #50c3ff
+        padding-top: 38px
+        padding-left: 31px
+        border-radius: 4px
+        width: 400px
+        box-sizing: border-box
+    &__header
+        margin: 0
+        margin-top: 45px
+        font-size: 18px
+        font-weight: 700
+    &__subheader
+        position: relative
+        margin: 0
+        margin-top: 11px
+        font-size: 18px
+        &_bus
+            padding-left: 37px
+            &::before
+                content: ''
+                position: absolute
+                height: 22px
+                width: 31px
+                background: url(../icons/bus.svg)
+                left: 0px
+        &_taxi
+            padding-left: 37px
+            &::before
+                content: ''
+                position: absolute
+                height: 13px
+                width: 30px
+                background: url(../icons/taxi.svg)
+                left: 0px

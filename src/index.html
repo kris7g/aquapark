@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=Aquapark , initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aquapark Samara</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
                         </div>
                         <nav>
                             <ul class="header__ul">
-                                <li class="header__li"><a href="">АКЦИЯ</a></li>
+                                <li class="header__li header__li_active"><a href="">АКЦИЯ</a></li>
                                 <li class="header__li"><a href="">АКВАПАРК</a></li>
                                 <li class="header__li"><a href="">ФОТО/ВИДЕО</a></li>
                                 <li class="header__li"><a href="">ЦЕНЫ</a></li>
@@ -30,19 +30,21 @@
                             </ul>
                         </nav>
                         <div class="header__icons">
-                            <img src="../src/icons/Forma_1.svg" alt="" class="header__icon">
+                            <div class="header__icon">
+                                <img src="../src/icons/Forma_1.svg" alt="">
+                            </div>
                             <a href="tel:79826772287" class="header__phone">+7 (846) 277-85-41</a>
                         </div>
 
                     </div>
                     <div class="header__stocks">
-                        <img src="img/bonus.png" alt="">
+                        <div class="header__img">
+                            <img src="img/bonus.png" alt="">
+                        </div>
                         <div class="header__subtitle">При оформлении посещения <br>
                             через сайт</div>
-                        <a href="" class="header__tickets"><img src="icons/ticket.svg" alt=""
-                                class="header__ticket">ХОЧУ В АКВАПАРК</a>
-                        <a href="" class="header__bonus">И ПОЛУЧИТЬ
-                            БЕСПЛАТНЫЙ БОНУС</a>
+                        <a href="" class="header__tickets">ХОЧУ В АКВАПАРК</a>
+                        <a href="" class="header__bonus">И ПОЛУЧИТЬ БЕСПЛАТНЫЙ БОНУС</a>
                     </div>
                 </div>
             </header>
@@ -84,34 +86,36 @@
                     <div class="photo__blocks">
                         <div class="photo__block">
                             <h1 class="photo__h1">ФОТО И ВИДЕО</h1>
-                            <!-- <iframe controls class="photo__video" width="964" height="542"
-                                src="https://www.youtube.com/embed/sMdEfXsHaCA" title="YouTube video player"
+                            <iframe class="photo__youtube" width="600" height="355"
+                                src="https://www.youtube.com/embed/KW51dVeXfMw" title="YouTube video player"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe> -->
+                                allowfullscreen></iframe>
                         </div>
                         <div class="photo__insta">
-                            <h1 class="photo__h1_insta">ИНСТАГРАМ</h1>
+                            <h1 class="photo__h1 photo__h1_insta">ИНСТАГРАМ</h1>
                             <div class="photo__insta-img">
                                 <div class="photo__icons">
                                     <img src="icons/instagram-brands.svg" alt="instagram-brands">
                                 </div>
                                 <a href="#" class="photo__link">@aqua_samara</a>
                             </div>
-                            <div class="photo__gallery1">
-                                <img src="img/girls.png" alt="girls">
-                                <img src="img/kids.png" alt="kids">
+                            <div class="photo__gallery">
+                                <img class="photo__girls" src="img/girls.png" alt="girls">
+                                <img class="photo__girls" src="img/kids.png" alt="kids">
+                                <img src="img/familis.png" alt="girls">
+                                <img src="img/girle.png" alt="kids">
                             </div>
-                            <div class="photo__gallery2">
-                                <img src="img/kids.png" alt="girls">
-                                <img src="img/girls.png" alt="kids">
-                            </div>
-
                         </div>
+                    </div>
+                    <div class="photo__glasses">
+                        <img src="img/glasses.png" alt="glasses">
+                    </div>
+                    <div class="photo__device">
+                        <img src="img/device.png" alt="device">
                     </div>
                 </div>
             </section>
-            <section class="map"></section>
             <section class="sales">
                 <div class="container">
                     <div class="sales__wrapper">
@@ -119,7 +123,7 @@
                         <div class="sales__blocks">
                             <div class="sales__block">
                                 <div class="sales__phone">
-                                    <div class="sales__header">мини</div>
+                                    <h2 class="sales__header">мини</h2>
                                 </div>
 
                                 <div class="sales__plan">
@@ -183,7 +187,9 @@
                                 <div class="sales__period">2 часа</div>
                             </div>
                             <div class="sales__block">
-                                <div class="sales__header sales__header_yellow">ОПТИМАЛЬНЫЙ</div>
+                                <div class="sales__phone sales__phone_yellow">
+                                    <h2 class="sales__header">оптимальный</h2>
+                                </div>
                                 <div class="sales__plan">
                                     <div class="sales__schedule">
                                         <div class="sales__days">Будни</div>
@@ -245,8 +251,10 @@
                                 </div>
                                 <div class="sales__period sales__period_yellow">4 часа</div>
                             </div>
-                            <div class="sales__block">
-                                <div class="sales__header sales__header_red">МАКСИМАЛЬНЫЙ</div>
+                            <div class="sales__block sales__block_red">
+                                <div class="sales__phone sales__phone_red">
+                                    <h2 class="sales__header">максимальный</h2>
+                                </div>
                                 <div class="sales__plan">
                                     <div class="sales__schedule">
                                         <div class="sales__days">Будни</div>
@@ -334,7 +342,7 @@
                         <div class="news__blocks">
                             <div class="news__block">
                                 <div class="news__img">
-                                    <img src="img/aqua.png" alt="aquapark">
+                                    <img class="news__adaptiv" src="img/aqua.png" alt="aquapark">
                                 </div>
                                 <div class="news__descr news__descr_pink">18 марта 2022г. аквапарк
                                     не работает</div>
@@ -344,7 +352,7 @@
                             </div>
                             <div class="news__block">
                                 <div class="news__img">
-                                    <img src="img/news_kids.png" alt="kids">
+                                    <img class="news__adaptiv" src="img/news_kids.png" alt="kids">
                                 </div>
                                 <div class="news__descr">Ежедневный режим
                                     работы</div>
@@ -354,7 +362,7 @@
                             </div>
                             <div class="news__block">
                                 <div class="news__img">
-                                    <img src="img/news_people.png" alt="people">
+                                    <img class="news__adaptiv" src="img/news_people.png" alt="people">
                                 </div>
                                 <div class="news__descr">Похолодало!
                                     А в Аквапарке +32</div>
@@ -369,7 +377,69 @@
                     </div>
                 </div>
             </section>
-            <footer></footer>
+            <section class="map">
+                <div class="container">
+                    <div class="map__wrapper">
+                        <div class="map__card">
+                            <h1>КАРТА ПРОЕЗДА</h1>
+                            <p class="map__header">НАШ АДРЕС:</p>
+                            <p class="map__subheader">Самара, Московское ш.,<br>
+                                18-й км, 23</p>
+                            <p class="map__header">ВРЕМЯ РАБОТЫ:</p>
+                            <p class="map__subheader">Ежедневно<br>
+                                с 11:00 до 19:00</p>
+                            <p class="map__header">На чем добраться:</p>
+                            <p class="map__subheader map__subheader_bus">Автобус: 1, 1д, 46, 51, 56, 67, 68, 144
+                            </p>
+                            <p class="map__subheader map__subheader_taxi">Маршрутное такси: 1, 1к, 96, 110, 205,<br>
+                                210, 221, 268, 295, 296, 410а, 492</p>
+                        </div>
+                        <iframe class="map__cars"
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A4e9bdeb797819a0fefad19133838979abf07dc068cdb195390653a08696cac39&amp;source=constructor"
+                            width="770" height="599" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="container">
+                    <div class="footer__wrapper">
+                        <div class="footer__left">
+                            <div class="footer__icons">
+                                <div class="footer__icon">
+                                    <a href=""><img src="icons/icon-vk.png" alt="vk"></a>
+                                </div>
+                                <div class="footer__icon">
+                                    <a href=""><img src="icons/icon-inst.png" alt="inst"></a>
+                                </div>
+                                <div class="footer__icon">
+                                    <a href=""><img src="icons/icon-face.png" alt="face"></a>
+                                </div>
+                            </div>
+                            <div class="footer__summer">
+                                <img src="img/SUMMER_PARK.png" alt="summer">
+                            </div>
+                        </div>
+                        <div class="footer__right">
+                            <div class="footer__descr">Аквапарк «Виктория» -Один из самых больших крытых аквапарков в
+                                Европе.
+                                Это настоящий экзотический остров удовольствия, где круглый год – лето
+                                (температура воздуха - +32 С, воды - +28 С).<br>
+                                Он уникальный водный комплекс площадью 6700 кв.м., который по своему
+                                дизайну и архитектуре напоминает индонезийский остров Бали: скалы
+                                различных форм, тропические деревья, водопады, горные речки, пещеры,
+                                гроты, уголок отдыха с шезлонгами…<br>
+                                В этом развлекательном комплексе любой<br> может найти себе отдых по душе: девять
+                                бассейнов разной глубины, десять
+                                водных горок (от плавных до крутых с резкими поворотами) для детей и
+                                взрослых (на любой вкус), волновой бассейн. Новинку мировых аквапарков
+                                «Циклон» вы можете испробовать именно в этом аквапарке.</div>
+                            <div class="footer__text">Данный интернет-сайт носит исключительно информационный характер,
+                                и ни при каких условиях информация и цены, размещенные на сайте,
+                                не являются публичной офертой (ст. 437 ГК РФ).</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </main>
 
     </body>
